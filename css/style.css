@@ -543,7 +543,20 @@ template {
 
 @media (max-width: 576px) {
   .logo {
+    width: 110px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+  .logo {
     width: 99px;
+    height: 14px;
+  }
+  .navbar-top {
+    padding: 28px 0 28px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
