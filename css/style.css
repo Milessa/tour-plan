@@ -587,6 +587,11 @@ template {
   line-height: 18px;
 }
 
+.rating__counter::after {
+  content: "5";
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 968px;
