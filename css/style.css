@@ -797,7 +797,7 @@ template {
   cursor: pointer;
 }
 
-.map {
+#map {
   width: 347px;
   height: 213px;
   background-color: #0A223D;
@@ -858,7 +858,7 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .booking, .map {
+  .booking, #map {
     width: 340px;
     height: 210px;
   }
@@ -907,7 +907,7 @@ template {
             flex-direction: column;
     min-height: 450px;
   }
-  .booking, .map {
+  .booking, #map {
     width: 100%;
   }
 }
