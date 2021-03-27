@@ -877,13 +877,16 @@ template {
 
 .subscribe__button {
   position: absolute;
-  min-width: 65px;
+  width: 65px;
   right: 0;
   top: 0;
   height: 100%;
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .reviews {
@@ -913,6 +916,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   max-width: 730px;
+  height: 280px;
   margin: 45px auto 0;
   background-color: #ffffff;
   border-radius: 8px;
@@ -1025,6 +1029,22 @@ template {
   line-height: 160%;
   text-align: justify;
   margin: auto;
+  overflow: auto;
+  padding-right: 7px;
+}
+
+.reviews-slider__text::-webkit-scrollbar {
+  width: 5px;
+}
+
+.reviews-slider__text::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.reviews-slider__text::-webkit-scrollbar-thumb:hover {
+  background: grey;
 }
 
 @media (max-width: 1200px) {
@@ -1290,7 +1310,7 @@ template {
     width: 100%;
   }
   .reviews {
-    padding: 20px 0 50px 0;
+    padding: 40px 0 50px 0;
   }
   .reviews-title {
     font-size: 25px;
@@ -1312,14 +1332,19 @@ template {
     height: 179px;
   }
   .reviews {
-    padding: 20px 0 50px 0;
+    padding: 40px 0 50px 0;
   }
   .reviews-title {
     font-size: 18px;
+    line-height: 23px;
+    width: 245px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 42px;
   }
   .reviews-slider__text {
     padding-bottom: 15px;
+    text-align: left;
   }
   .reviews-slider__button--prev {
     left: 45%;
