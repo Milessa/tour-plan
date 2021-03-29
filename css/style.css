@@ -1213,7 +1213,7 @@ template {
   }
   .card {
     width: 340px;
-    height: 230px;
+    height: 250px;
   }
 }
 
@@ -1473,6 +1473,10 @@ template {
   .activities {
     padding-top: 40px;
     padding-bottom: 60px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */
