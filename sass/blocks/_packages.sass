@@ -1,0 +1,128 @@
+.packages
+  padding-top: 40px
+  padding-bottom: 70px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 65px
+  &-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: repeat(2, 1fr)
+    gap: 30px 30px
+
+.hotel1
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-template-rows: 1fr
+  gap: 0px 0px
+  grid-area: 1 / 1 / 2 / 3
+
+.hotel2
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(2, 1fr)
+  gap: 0px 0px
+  grid-area: 2 / 3 / 3 / 4
+  grid-row-start: 1
+  grid-row-end: 1
+.hotel3
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(2, 1fr)
+  gap: 0px 0px
+  grid-area: 2 / 1 / 3 / 2
+.hotel4
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(2, 1fr)
+  gap: 0px 0px
+  grid-area: 2 / 2 / 3 / 3
+.hotel5
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(2, 1fr)
+  gap: 0px 0px
+  grid-area: 2 / 3 / 3 / 4
+
+.hotels
+  position: relative
+  height: 500px
+  border-radius: 8px
+  overflow: hidden
+  &-photo
+    &__offer
+      position: absolute
+      top: 26px
+      left: 0
+      border-radius: 0 3px 3px 0
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &-about
+    padding: 30px 21px 25px 32px
+    color: $light
+    background-color: $dark
+    &-main
+      padding: 46px 21px 30px 44px
+    &__title
+      margin-bottom: 23px
+      &__main
+        margin-bottom: 27px
+  &-title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+  &-info
+    margin-bottom: 34px
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 160.6%
+  &__room
+    margin-bottom: 24px
+    &__main
+      margin-bottom: 34px
+  &__text
+    margin-bottom: 8px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__description
+    margin-left: 14px
+  &__prices
+    display: inline-flex
+    flex-direction: column
+    margin-right: 90px
+  &__pricetag
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    margin-top: 5px
+    &-old
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+  &__button
+    vertical-align: bottom
+    font-family: 'Nunito', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+    padding: 10px 26px
+    border: none
+    background-color: $primary
+    border-radius: 4px
+    cursor: pointer
