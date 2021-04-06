@@ -63,3 +63,12 @@ function init() {
     )
   );
 }
+
+// code menu button
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Click on the button");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});
