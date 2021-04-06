@@ -2015,6 +2015,7 @@ template {
     display: none;
   }
   .navbar__search--mobile--visible, .navbar__user--mobile--visible {
+    width: 245px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
