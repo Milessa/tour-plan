@@ -1621,6 +1621,10 @@ template {
   right: 0;
 }
 
+a[href^="tel:+52566138"] {
+  white-space: nowrap;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 968px;
