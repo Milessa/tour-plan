@@ -259,7 +259,9 @@
                 </a>
               </div>
               <!-- /.call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div id="map"></div>
@@ -338,7 +340,9 @@
                   <span class="hotels__pricetag-old">$ 10,500</span>
                   <strong class="hotels__pricetag">$ 8,500</strong>
                 </div>
-                <button class="hotels__button">Book now</button>
+                <button data-toggle="modal" class="hotels__button">
+                  Book now
+                </button>
               </div>
               <!-- /.hotels__contact -->
             </div>
@@ -393,7 +397,9 @@
                   <span class="hotels__pricetag-old">$ 8,500</span>
                   <strong class="hotels__pricetag">$ 3,000</strong>
                 </div>
-                <button class="hotels__button">Book now</button>
+                <button data-toggle="modal" class="hotels__button">
+                  Book now
+                </button>
               </div>
               <!-- /.hotels__contact -->
             </div>
@@ -448,7 +454,9 @@
                   <span class="hotels__pricetag-old">$ 10,500</span>
                   <strong class="hotels__pricetag">$ 9,500</strong>
                 </div>
-                <button class="hotels__button">Book now</button>
+                <button data-toggle="modal" class="hotels__button">
+                  Book now
+                </button>
               </div>
               <!-- /.hotels__contact -->
             </div>
@@ -503,7 +511,9 @@
                   <span class="hotels__pricetag-old">$ 4,500</span>
                   <strong class="hotels__pricetag">$ 2,500</strong>
                 </div>
-                <button class="hotels__button">Book now</button>
+                <button data-toggle="modal" class="hotels__button">
+                  Book now
+                </button>
               </div>
               <!-- /.hotels__contact -->
             </div>
@@ -558,7 +568,9 @@
                   <span class="hotels__pricetag-old">$ 6,500</span>
                   <strong class="hotels__pricetag">$ 3,500</strong>
                 </div>
-                <button class="hotels__button">Book now</button>
+                <button data-toggle="modal" class="hotels__button">
+                  Book now
+                </button>
               </div>
               <!-- /.hotels__contact -->
             </div>
@@ -804,7 +816,7 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__button">Book now</button>
+            <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -814,7 +826,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book now</button>
+            <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -824,7 +836,7 @@
               class="card__image"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book now</button>
+            <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -834,7 +846,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book now</button>
+            <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -1002,7 +1014,7 @@
 
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="post" class="footer__form">
+            <form action="send.php" method="post" class="form footer__form">
               <input
                 type="text"
                 class="input footer__input"
@@ -1016,7 +1028,7 @@
                 name="phone"
               />
               <textarea
-                class="footer__message"
+                class="footer__message message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -1051,6 +1063,47 @@
     </footer>
     <!-- /.bottom -->
 
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: Close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Booking</h3>
+        <form action="send.php" method="post" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number"
+            name="phone"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Your email address"
+            name="email"
+          />
+          <textarea
+            class="modal__message message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>

@@ -180,6 +180,10 @@
     padding-bottom: 33px 
     &__conditions
       justify-content: flex-start
+  
+  .modal
+    &__dialog
+      padding: 33px 44px
 
 @media ( max-width: 768px  )
   .container
@@ -280,6 +284,14 @@
       &-old
         font-size: 12px
         line-height: 12px
+
+  .modal
+    &__button
+      margin-top: 20px
+    &__info
+      position: absolute
+      left: 45px
+      top: 415px
 
 @media ( max-width: 650px  )  
   body
@@ -408,6 +420,10 @@
   .footer
     &__form
       display: inline-flex
+  
+  .modal
+    &__dialog
+      width: 70%
 
 @media ( max-width: 576px  )  
   .logo
@@ -567,11 +583,19 @@
       right: auto
       position: initial
       margin-top: 10px
+  
+  .modal
+    &__dialog
+      width: 75%
 
 @media ( max-width: 390px  )   
   .footer
     &__input
       flex-basis: 100%
+  
+  .modal
+    &__dialog
+      width: 80%
 
 @media ( max-width: 320px  )        
   .container 
@@ -673,4 +697,8 @@
       position: absolute
       left: 0
       top: 12px
+  
+  .modal
+    &__dialog
+      width: 90%
       
