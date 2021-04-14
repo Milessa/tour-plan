@@ -61,9 +61,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -75,7 +72,7 @@ a {
   line-height: 15px;
 }
 
-.invalid {
+.error {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
   z-index: 100;
@@ -1737,6 +1734,9 @@ a[href^="tel:+52566138"] {
 }
 
 .modal__info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #ffffff;
 }
 
@@ -2155,7 +2155,7 @@ a[href^="tel:+52566138"] {
   .modal__info {
     position: absolute;
     left: 45px;
-    top: 415px;
+    top: 422px;
   }
 }
 

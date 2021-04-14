@@ -102,28 +102,34 @@ $(document).ready(function () {
     }
   });
 
+  //code for phone mask
+  $(".phone-mask").inputmask("+7(999)999-99-99");
   //code for modal form processing
   $(".form").each(function () {
     $(this).validate({
-      errorClass: "invalid",
       messages: {
         name: {
-          required: "Please specify your name",
-          minlength: "Name should be at least 2 symbols",
+          minlength: "Name should be at least 3 symbols",
         },
         email: {
-          required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
-        },
-        phone: {
-          required: "Please introduce your phone number",
         },
       },
     });
   });
+});
 
-  //code for phone mask
-  $(document).ready(function () {
-    $(".phone-mask").mask("+7 (000) 000-00-00");
+// rule for phone validation
+$.validator.addMethod("checkMaskPhone", function (value, element) {
+  return /\+\d{1}\(\d{3}\)\d{3}-\d{2}-\d{2}/g.test(value);
+});
+// take our form by class
+$(".form").each(function () {
+  $(this).validate();
+  // put validation for phone input by class
+  $.validator.addClassRules({
+    "phone-mask": {
+      checkMaskPhone: true,
+    },
   });
 });
