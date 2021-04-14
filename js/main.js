@@ -132,4 +132,5 @@ $(".form").each(function () {
       checkMaskPhone: true,
     },
   });
+  AOS.init();
 });

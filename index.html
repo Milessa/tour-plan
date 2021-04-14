@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=2440e153-7d68-4e70-a59b-0d87db83cd87
@@ -800,6 +801,7 @@
           ></button>
           <button
             class="reviews-slider__button reviews-slider__button--next"
+            data-aos="zoom-in"
           ></button>
         </div>
         <!-- /.swiper-container reviews-slider -->
@@ -811,7 +813,13 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities__wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-id="super-duper"
+            data-aos-delay="200"
+            data-aos-duration="400"
+          >
             <img
               src="img/activity_1.jpg"
               alt="The curious corner of chamarel"
@@ -821,7 +829,12 @@
             <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="400"
+          >
             <img
               src="img/activity_2.jpg"
               alt="Gymkhana club golf course"
@@ -831,7 +844,12 @@
             <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="400"
+          >
             <img
               src="img/activity_3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -841,7 +859,12 @@
             <button data-toggle="modal" class="card__button">Book now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="400"
+          >
             <img
               src="img/activity_4.jpg"
               alt="The blue marine discovery quest"
@@ -1130,6 +1153,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

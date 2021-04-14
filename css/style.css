@@ -587,6 +587,10 @@ template {
 .hotel-info__offer {
   margin-left: 14px;
   margin-top: 4px;
+  -webkit-animation: bounceIn 3s;
+          animation: bounceIn 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 .hotel-info__name {
