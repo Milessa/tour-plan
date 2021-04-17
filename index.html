@@ -16,11 +16,10 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=2440e153-7d68-4e70-a59b-0d87db83cd87
-&lang=en_RU"
-      type="text/javascript"
-    ></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2440e153-7d68-4e70-a59b-0d87db83cd87
+&lang=en_RU"></script>
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
@@ -157,7 +156,12 @@
                 <img src="img/star.svg" alt="star" />
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
-              <span class="offer hotel-info__offer">Flash Offer</span>
+              <span
+                class="offer hotel-info__offer"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                >Flash Offer</span
+              >
             </div>
             <p class="hotel-description hotel-info__description">
               Half-Board/ All Inclusive + Complimentary Activities + Child Stays
@@ -1005,7 +1009,7 @@
                     alt="Icon: Phone"
                   />
                 </div>
-                <ul class="footer__icon-wrapper--phone">
+                <ul class="footer__icon-phone">
                   <li>
                     Tel (business hours): <a href="tel:+2691500 "> 269 1500 </a>
                   </li>
@@ -1063,7 +1067,6 @@
                 />
               </div>
               <textarea
-                type="text"
                 class="footer__message message"
                 placeholder="Message"
                 name="message"
@@ -1135,7 +1138,6 @@
             data-msg="We need your email address to contact you"
           />
           <textarea
-            type="text"
             class="modal__message message"
             placeholder="Message"
             name="message"
