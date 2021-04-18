@@ -1,5 +1,5 @@
 .packages
-  padding-top: 40px
+  padding-top: 10px
   padding-bottom: 70px
   &__title
     font-style: normal
@@ -55,13 +55,21 @@
   border-radius: 8px
   overflow: hidden
   &-stars
-    margin-bottom: 10px
+    margin-bottom: 15px
   &-photo
     &__offer
       position: absolute
+      width: 60px
+      height: 18px
       top: 26px
       left: 0
-      border-radius: 0 3px 3px 0
+      border-radius: 0 4px 4px 0
+      font-size: 8px
+      &--first
+        width: 95px !important
+        height: 30px !important
+        font-size: 12px !important
+        line-height: 24px
   &__image
     width: 100%
     height: 100%
@@ -82,7 +90,8 @@
     font-size: 18px
     line-height: 23px
   &-info
-    margin-bottom: 34px
+    margin-bottom: 50px
+    margin-top: -8px
     font-style: normal
     font-weight: bold
     font-size: 14px
@@ -119,6 +128,8 @@
       line-height: 18px
       text-decoration-line: line-through
   &__button
+    width: 120px
+    height: 40px
     align-self: flex-end
     font-family: 'Nunito', sans-serif
     font-style: normal
@@ -131,3 +142,16 @@
     background-color: $primary
     border-radius: 4px
     cursor: pointer
+    overflow-x: scroll
+    overflow-y: hidden
+    &:hover
+      background: $prim-harm
+    &::-webkit-scrollbar
+      height: 5px
+    &::-webkit-scrollbar-thumb 
+      background: rgba(0, 0, 0, .1)
+      border-radius: 5px
+      cursor: pointer
+    &::-webkit-scrollbar-thumb
+      &:hover 
+        background: grey

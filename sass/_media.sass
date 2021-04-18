@@ -9,10 +9,13 @@
         height: 100%
         object-fit: cover
   .hotels
+    &-stars
+      margin-bottom: 15px
     &__image
       &__main
         height: 500px
     &-info
+      margin-bottom: 34px
       line-height: 136%
   .card
     width: 230px
@@ -37,8 +40,10 @@
     &-menu
       padding: 22px 0 22px 0
       &__link
-         font-size: 12px
-         line-height: 15px 
+        font-size: 12px
+        line-height: 15px 
+        &:hover
+          border-bottom: none
   .search
     &__input    
       max-width: 340px   
@@ -51,9 +56,16 @@
         margin-bottom: 30px
     &-details
       flex-direction: row
+    &-back
+      &:hover
+        background-color: $primary
   .booking, #map
     width: 340px
     height: 210px
+  .booking
+    &__button
+      &:hover
+        background-color: $primary
 
   .packages-wrapper
     display: grid
@@ -93,6 +105,13 @@
     
   .hotels
     height: 450px
+    &-stars
+      10px
+    &-photo
+      &__offer
+        width: 75px
+        height: 20px
+        font-size: 11px
     &-about
       padding: 20px 21px 25px 30px
       &-main
@@ -123,7 +142,12 @@
         line-height: 12px
     &__button
       padding: 7px 16px
-
+      &:hover
+        background-color: $primary
+  .subscribe
+    &__button
+      &:hover
+        background-color: $primary
   .reviews
     &-slider
       &__item
@@ -136,10 +160,15 @@
   .card
     width: 340px
     height: 250px
+    &__button
+      &:hover
+        background-color: $primary
   
   .footer
     padding-top: 59px
     padding-bottom: 56px
+    &__link
+      border-bottom: none !important
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 39px
@@ -177,31 +206,41 @@
       &__title
         &--mb-3
           margin-bottom: 24px
+      &__button
+        &:hover
+          background-color: $primary
   .bottom
     padding-top: 56px
     padding-bottom: 33px 
     &__conditions
       justify-content: flex-start
+    &__link
+      border-bottom: none
   
   .modal
     &__dialog
       padding: 33px 44px
+    &__button
+      &:hover
+        border-bottom: 1.5px solid $prim-harm
 
 @media ( max-width: 768px  )
   .container
     max-width: 700px 
     width: 92%
   .logo
-    width: 120px  
+    width: 132px  
   .navbar
     &-top
-      padding: 24px 0 24px 0
+      padding: 29px 0 31px 0
+    &-bottom
+      padding-bottom: 8px
     &__search
-      margin-left: 30px
+      margin-left: 48px
     &__user
       margin-left: 30px
     &-menu
-      padding: 15px 0 15px 0
+      padding: 19px 0 15px 0
       &__link
          font-size: 12px
          line-height: 15px 
@@ -215,21 +254,33 @@
       max-width: 700px 
       width: 92%
   .reviews
+    padding: 38px 0 54px 0
     &-title
+      font-size: 30px
       margin-top: 0
       margin-bottom: 50px
     &-slider
       &__profile
         margin-bottom: 32px
+      &__avatar
+        margin-bottom: 5px
       &__username
         margin-top: 0
+      &__text
+        max-width: 448px
       &__item
         padding: 0 30px 30px
         &::after, &::before
           display: none
+      &__button
+        top: 52%
+        &--prev
+          left: 0
+        &--next
+          right: 0
   .activities
     padding-top: 60px
-    padding-bottom: 70px
+    padding-bottom: 64px
   .card
     width: 49%
     height: 255px
@@ -242,8 +293,39 @@
         font-size: 13px
         line-height: 16px
   .footer
+    &-wrapper
+      grid-template-columns: repeat(7, 1fr)
+      grid-template-rows: 122px
+    &__categories
+      margin-left: 0
+      margin-top: -2px
+    &__additional
+      grid-column: span 3
+      margin-left: -5px
+      margin-top: -2px
+    &__legal
+      margin-left: -15px
+      margin-top: -2px
+    &__social-network
+      margin-top: 1px
+      margin-left: -18px
+    &__contact
+      &-details
+        margin-top: 24px
+      &-form
+        margin-top: 1px
+        margin-left: 0
     &__logo
+      margin-top: 0
       width: 96px
+    &__form
+      width: 539px
+    &__input
+      &-group
+        flex-basis: 47%
+  .bottom
+    padding-top: 6px
+    padding-left: 2px
 
 @media ( max-width: 750px  )     
   .hotel
@@ -254,7 +336,12 @@
       min-height: 450px
   .booking, #map
     width: 100%
-
+  .footer
+    &__categories, &__additional
+      margin-left: 0
+    &__legal
+      margin-left: 40px
+  
 @media ( max-width: 700px )
   .newsletter
     &-title
@@ -293,7 +380,7 @@
     &__info
       position: absolute
       left: 45px
-      top: 422px
+      top: 388px
 
 @media ( max-width: 650px  )  
   body
@@ -420,6 +507,8 @@
       padding: 5px 20px
   
   .footer
+    &__legal
+      margin-left: 0px
     &__form
       display: inline-flex
   
@@ -467,6 +556,8 @@
       &-old
         display: none
     &__button
+      width: 100px
+      height: 30px
       padding: 5px 18px
   .subscribe 
     width: 100%
@@ -476,6 +567,9 @@
       font-size: 25px
   .card
     width: 100%
+    &__button
+      width: 140px
+      height: 35px
   
   .footer
     padding-top: 69px
@@ -486,10 +580,13 @@
     &__logo
       grid-row: 1
       grid-column: 1
+    &__form
+      max-width: 450px
     &__social
       &-network
         grid-row: 2
         grid-column: 1
+        margin-left: 0
     &__additional
         grid-row: 3
         grid-column: 1
@@ -497,6 +594,7 @@
       grid-row: 4
       grid-column: 1
     &__legal
+      margin-left: 0
       grid-row: 5
       grid-column: 1
     &__contact
@@ -551,6 +649,15 @@
   .hotels
     &-stars
       display: none
+    &-photo
+      &__offer
+        width: 76px
+        height: 23px
+        &--first
+          width: 76px !important
+          height: 23px !important
+          font-size: 11px !important
+          line-height: 13px !important
     &__image
       &__main
         width: 100%
@@ -574,8 +681,15 @@
       margin-left: 10px
     &__pricetag
       font-size: 20px
-    &__button
+    &__button  
+      width: 120px
+      height: 35px
       padding: 5px 18px
+  .reviews
+    &-slider
+      &__button
+        &--next
+          right: 49%  
   .bottom
     padding-top: 30px
     padding-bottom: 21px
@@ -587,6 +701,8 @@
       margin-top: 10px
   
   .footer
+    &__form
+      max-width: 350px
     &__input
       &-group
         flex-basis: 100%
@@ -596,6 +712,9 @@
       width: 75%
 
 @media ( max-width: 390px  )   
+  .footer
+    &__form
+      max-width: 285px
   .modal
     &__info
       top: 423px
@@ -604,16 +723,49 @@
 
 @media ( max-width: 320px  )        
   .container 
-    max-width: 280px
+    max-width: 279px
   .logo
     width: 99px
-    height: 14px
+    height: 11px
   .navbar
     &-top
-      padding: 28px 0 28px 0
+      padding: 24px 0 28px 0
+    &-bottom
+      margin-top: 6px
+    &-menu
+      padding: 000
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &--visible
+            margin-bottom: 27px
   .hotel
+    padding-top: 2px
+    &-grid
+      margin-top: 30px
+    &-info
+      &__description
+        margin: 0
     &-slider
       height: 179px
+  .booking
+    &__call
+      &-center
+        margin-bottom: 12px
+        margin-top: -3px
+  .packages
+    padding-top: 0
+    padding-bottom: 69px
+    &__title
+      margin-top: 0
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+  .newsletter
+    &-wrapper
+      margin-top: 5px
+      width: 88%
   .reviews
     padding: 40px 0 50px 0
     &-title
@@ -624,22 +776,30 @@
       margin-right: auto
       margin-bottom: 42px
     &-slider
+      &__avatar
+        margin-bottom: 10px
       &__item
-        height: 483px
+        height: 438px
+        padding: 0 30px
       &__text
-        padding-bottom: 15px
+        padding-bottom: 31px
         text-align: left
       &__button
         &--prev
-          left: 45%
+          left: 40%
         &--next
-          right: 45%
+          right: 42%
   .activities
-    padding-top: 40px
-    padding-bottom: 60px
+    padding-top: 25px
+    padding-bottom: 48px
     &__title
       font-size: 18px
       line-height: 23px
+      margin-bottom: 36px
+  .card
+    &__button
+      width: 100px
+      height: 30px
   .hotels
     &-about
       &__title
@@ -655,25 +815,37 @@
 
   .footer
     &__logo
-      width: 86px
+      width: 94px
       height: 100px
     &__social
       &-network
-        display: inline-grid 
+        display: inline-grid
+        margin-top: 0 
       &-links
         max-width: 83px
         margin-top: 20px
     &__additional
       grid-row: 4
+      margin-top: 0
     &__categories
       grid-row: 5
+      margin-top: 0
+    &__contact
+      &-form
+        margin-top: 10px
+      &-details
+        margin-top: 14px
     &__legal
       grid-row: 3
     &__contact
       &-details
         margin-top: 11px
+    &__icon
+      &-wrapper
+        min-width: 30px
     &__text
-      margin-bottom: 20px
+      margin-top: 28px
+      margin-bottom: 23px
       font-style: normal
       font-weight: normal
       font-size: 14px
@@ -686,11 +858,13 @@
     &__info
       position: absolute
       left: 0
-      top: 268px
+      top: 251px
     &__form
       position: relative
+      max-width: 279px
   
   .bottom
+    padding-top: 3px
     padding-bottom: 50px
     &__conditions
       position: relative
@@ -700,10 +874,34 @@
         margin-right: 0
     &__icon
       position: absolute
-      left: 0
+      left: -3px
       top: 12px
   
   .modal
     &__dialog
       width: 90%
-      
+
+/* Modal window in landscape orientation */        
+@media (max-height: 550px)
+  .modal
+    &__dialog
+      max-height: 400px
+      overflow: scroll
+
+@media (max-height: 430px)
+  .modal
+    &__dialog
+      max-height: 350px
+      overflow: scroll     
+
+@media (max-height: 370px)
+  .modal
+    &__dialog
+      max-height: 315px
+      overflow: scroll            
+
+@media (max-height: 320px)
+  .modal
+    &__dialog
+      max-height: 299px
+      overflow: scroll

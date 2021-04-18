@@ -5,7 +5,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding-bottom: 20px
+    padding-bottom: 7px
     &__offer
       margin-left: 14px
       margin-top: 4px
@@ -36,7 +36,7 @@
   &-slider
     width: 728px
     height: 450px
-    margin-left: 0
+    margin-left: 2px
     &__item
       width: 100%
       height: 100%
@@ -74,18 +74,9 @@
         left: 18px
         background-image: url(../img/arrow-prev.svg)
   &-back
-    min-width: 160px
-    min-height: 50px
-    padding: 18px
-    font-style: normal
-    font-weight: bold
     font-size: 14px
-    line-height: 15px
-    color: #ffffff
-    background-color: #EC1F46
-    border-radius: 4px
-    border: none
-    margin-top: 45px
+    &:hover
+      background-color: $prim-harm
   &--pb-4
     padding-bottom: 45px
 
@@ -109,6 +100,7 @@
   color: $light
   background-color: $primary
   border-radius: 4px
+  margin-top: -15px
   &__text
     font-size: 8px
     line-height: 10px
@@ -165,7 +157,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    margin-bottom: 17px
+    margin-bottom: 14px
   &__heading
     font-style: normal
     font-weight: 600
@@ -185,7 +177,7 @@
     margin-left: 8px
   &__button
     width: 100%
-    min-height: 45px
+    height: 45px !important
     border-radius: 4px
     border: none
     color: $light
@@ -194,6 +186,8 @@
     font-size: 14px
     line-height: 19px
     cursor: pointer
+    &:hover
+      background: $prim-harm
 
 #map
   width: 347px

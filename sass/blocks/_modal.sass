@@ -4,7 +4,7 @@
     font-weight: bold
     font-size: 18px
     line-height: 23px
-    margin-bottom: 15px
+    margin-bottom: -5px
     text-transform: uppercase
     text-align: center
   &__overlay
@@ -23,10 +23,10 @@
       opacity: 1
   &__dialog
     position: fixed
-    top: 50%
+    top: 48%
     left: 50%
-    max-width: 487px
-    padding: 33px 88px
+    max-width: 478px
+    padding: 20px 88px
     border-radius: 8px
     transform: translate(-50%, -50%)
     background-color: $dark
@@ -51,7 +51,23 @@
     margin-top: 15px
     resize: none
   &__button
+    width: 160px
+    height: 50px
     margin-top: 15px
+    overflow-x: scroll
+    overflow-y: hidden
+    &:hover
+      border-bottom: 1.5px solid $prim-harm
+    &::-webkit-scrollbar
+      height: 5px
+    &::-webkit-scrollbar-thumb 
+      background: rgba(0, 0, 0, .1)
+      border-radius: 5px
+      cursor: pointer
+    &::-webkit-scrollbar-thumb
+      &:hover 
+        background: grey
   &__info
     align-self: center
     color: $light
+    margin-top: 16px
