@@ -63,6 +63,7 @@
       height: 18px
       top: 26px
       left: 0
+      padding-left: 9px
       border-radius: 0 4px 4px 0
       font-size: 8px
       &--first
@@ -81,25 +82,26 @@
     &-main
       padding: 46px 21px 30px 44px
     &__title
-      margin-bottom: 23px
+      margin-bottom: 24px
+      margin-top: -3px
       &__main
-        margin-bottom: 27px
+        margin-bottom: 34px
   &-title
     font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 23px
   &-info
-    margin-bottom: 50px
+    margin-bottom: 44px
     margin-top: -8px
     font-style: normal
-    font-weight: bold
+    font-weight: normal
     font-size: 14px
     line-height: 22px
   &__room
     margin-bottom: 24px
     &__main
-      margin-bottom: 34px
+      margin-bottom: 40px
   &__text
     margin-bottom: 8px
     font-style: normal
@@ -115,6 +117,7 @@
   &__prices
     display: inline-flex
     flex-direction: column
+    margin-top: -9px
   &__pricetag
     font-style: normal
     font-weight: bold
@@ -122,6 +125,7 @@
     line-height: 30px
     margin-top: 5px
     &-old
+      margin-top: 2px
       font-style: normal
       font-weight: normal
       font-size: 14px
@@ -129,7 +133,9 @@
       text-decoration-line: line-through
   &__button
     width: 120px
-    height: 40px
+    height: 40px    
+    margin-top: 13px
+    padding: 10px 26px
     align-self: flex-end
     font-family: 'Nunito', sans-serif
     font-style: normal
@@ -137,9 +143,8 @@
     font-size: 14px
     line-height: 19px
     color: $light
-    padding: 10px 26px
-    border: none
     background-color: $primary
+    border: none
     border-radius: 4px
     cursor: pointer
     overflow-x: scroll

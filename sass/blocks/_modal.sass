@@ -23,7 +23,7 @@
       opacity: 1
   &__dialog
     position: fixed
-    top: 48%
+    top: 54%
     left: 50%
     max-width: 478px
     padding: 20px 88px
@@ -35,6 +35,16 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
+    overflow-x: scroll
+    &::-webkit-scrollbar
+      width: 7px
+    &::-webkit-scrollbar-thumb 
+      background: rgba(0, 0, 0, .1)
+      border-radius: 5px
+      cursor: pointer
+    &::-webkit-scrollbar-thumb
+      &:hover 
+        background: grey
     &--visible
       visibility: visible
       opacity: 1

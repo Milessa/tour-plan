@@ -43,10 +43,25 @@
         font-size: 12px
         line-height: 15px 
         &:hover
-          border-bottom: none
+          &::before 
+            opacity: 0
+  .user
+    &:hover
+      color: $dark
+      background: $light
+      border-radius: none
   .search
     &__input    
-      max-width: 340px   
+      max-width: 340px 
+    &__button
+      &:hover
+        background-color: $primary
+  .breadcrumb-list
+    &__link
+      &:hover
+        &::before 
+          opacity: 0
+
   .hotel
     &-slider
       width: 100%
@@ -63,6 +78,10 @@
     width: 340px
     height: 210px
   .booking
+    &__number
+      &:hover
+          &::before 
+            opacity: 0
     &__button
       &:hover
         background-color: $primary
@@ -152,6 +171,8 @@
     &-slider
       &__item
         max-width: 580px
+      &__text
+        padding-right: 7px
   .activities
     &__wrapper
       flex-wrap: wrap
@@ -168,7 +189,9 @@
     padding-top: 59px
     padding-bottom: 56px
     &__link
-      border-bottom: none !important
+      &:hover
+        &::before 
+          opacity: 0
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 39px
@@ -206,23 +229,41 @@
       &__title
         &--mb-3
           margin-bottom: 24px
-      &__button
-        &:hover
-          background-color: $primary
+    &__button
+      &:hover
+        background-color: $primary
+   
+  a[href^="tel:+52566138"]
+    &:hover
+      &::before 
+        opacity: 0
+  a[href^="tel:+2691500"]  
+    &:hover
+      &::before 
+        opacity: 0
+  a[href^="mailto:cherly.lawson@example.com"]  
+    &:hover
+      &::before 
+        opacity: 0  
   .bottom
     padding-top: 56px
     padding-bottom: 33px 
     &__conditions
       justify-content: flex-start
+      margin-left: -2px
+    &__icon
+      margin-left: 2px
     &__link
-      border-bottom: none
+      &:hover
+        &::before 
+          opacity: 0
   
   .modal
     &__dialog
       padding: 33px 44px
     &__button
       &:hover
-        border-bottom: 1.5px solid $prim-harm
+        border-bottom: none
 
 @media ( max-width: 768px  )
   .container
@@ -240,13 +281,24 @@
     &__user
       margin-left: 30px
     &-menu
-      padding: 19px 0 15px 0
+      padding: 19px 14px 16px 14px
       &__link
          font-size: 12px
          line-height: 15px 
+  .user
+    &__name
+      margin-top: 7px
   .search
     &__input    
       max-width: 340px  
+  .hotel 
+    &-info
+      &__name
+        margin-top: 6px
+  .rating
+    margin-top: -14px
+  .booking
+    padding: 28px 23px 21px
   .newsletter
     padding: 92px 0 93px 0
     height: 260px
@@ -263,17 +315,20 @@
       &__profile
         margin-bottom: 32px
       &__avatar
-        margin-bottom: 5px
+        margin-bottom: 10px
+        margin-top: -5px
       &__username
         margin-top: 0
       &__text
-        max-width: 448px
+        max-width: 466px
+        margin-left: 37px
+        margin-top: 0
       &__item
-        padding: 0 30px 30px
+        padding: 0 29px 16px
         &::after, &::before
           display: none
       &__button
-        top: 52%
+        top: 51%
         &--prev
           left: 0
         &--next
@@ -334,6 +389,9 @@
     &-details
       flex-direction: column 
       min-height: 450px
+  .hotels
+    &__button
+      height: 33px
   .booking, #map
     width: 100%
   .footer
@@ -687,6 +745,10 @@
       padding: 5px 18px
   .reviews
     &-slider
+      &__profile
+        margin-top: -39px
+      &__text
+        margin-left: 2px
       &__button
         &--next
           right: 49%  
@@ -712,12 +774,22 @@
       width: 75%
 
 @media ( max-width: 390px  )   
+  .hotel
+    &-slider
+      &__button
+        height: 8px
+        &--prev
+          left: -5px
+          background-image: url(../img/arrow-prev-320.svg)
+        &--next
+          right: 3px
+          background-image: url(../img/arrow-next-320.svg)
   .footer
     &__form
       max-width: 285px
   .modal
     &__info
-      top: 423px
+      top: 388px
     &__dialog
       width: 80%
 
@@ -725,11 +797,15 @@
   .container 
     max-width: 279px
   .logo
-    width: 99px
+    width: 97px
     height: 11px
+    margin-top: -6px
   .navbar
     &-top
       padding: 24px 0 28px 0
+      &__menu
+        &-button
+          margin-top: 6px
     &-bottom
       margin-top: 6px
     &-menu
@@ -739,16 +815,25 @@
         &--mobile
           &--visible
             margin-bottom: 27px
+  .breadcrumb
+    &-list
+      padding: 20px 0
   .hotel
-    padding-top: 2px
+    margin-top: -25px
     &-grid
-      margin-top: 30px
+      margin-top: 25px
     &-info
+      padding-bottom: 0
       &__description
         margin: 0
     &-slider
       height: 179px
+  .stars
+    margin-top: -3px
+    margin-right: 16px
   .booking
+    &__info
+      margin-bottom: 9px
     &__call
       &-center
         margin-bottom: 12px
@@ -763,6 +848,11 @@
       font-size: 18px
       line-height: 23px
   .newsletter
+    &-title
+      margin-bottom: 36px
+      margin-top: -5px
+      &__strong
+        padding-top: 7px
     &-wrapper
       margin-top: 5px
       width: 88%
@@ -776,6 +866,8 @@
       margin-right: auto
       margin-bottom: 42px
     &-slider
+      &__profile
+        margin-top: -40px
       &__avatar
         margin-bottom: 10px
       &__item
@@ -784,6 +876,10 @@
       &__text
         padding-bottom: 31px
         text-align: left
+        width: 219px
+        margin-left: 2px
+        margin-top: 0
+        padding-right: 0px
       &__button
         &--prev
           left: 40%
@@ -815,8 +911,9 @@
 
   .footer
     &__logo
-      width: 94px
+      width: 95px
       height: 100px
+      margin-top: -1px
     &__social
       &-network
         display: inline-grid
@@ -832,20 +929,19 @@
       margin-top: 0
     &__contact
       &-form
-        margin-top: 10px
+        margin-top: 14px
       &-details
         margin-top: 14px
+        margin-left: -3px
     &__legal
       grid-row: 3
-    &__contact
-      &-details
-        margin-top: 11px
     &__icon
       &-wrapper
         min-width: 30px
+        margin-left: 3px
     &__text
-      margin-top: 28px
-      margin-bottom: 23px
+      margin-top: 24px
+      margin-bottom: 20px
       font-style: normal
       font-weight: normal
       font-size: 14px
