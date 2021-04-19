@@ -10,6 +10,8 @@
     <title>Best Tour Plan — Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      async
+      rel="preconnect"
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
@@ -18,8 +20,6 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=2440e153-7d68-4e70-a59b-0d87db83cd87
-&lang=en_RU"></script>
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
@@ -30,6 +30,7 @@
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
+              loading="lazy"
           /></a>
 
           <form
@@ -186,6 +187,7 @@
                   class="hotel-slider__image"
                   src="img/Slide1.jpg"
                   alt="Hotel Picture 1"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
@@ -193,6 +195,7 @@
                   class="hotel-slider__image"
                   src="img/Slide2.jpg"
                   alt="Hotel Picture 2"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
@@ -200,6 +203,7 @@
                   class="hotel-slider__image"
                   src="img/Slide3.jpg"
                   alt="Hotel Picture 3"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
@@ -207,6 +211,7 @@
                   class="hotel-slider__image"
                   src="img/Slide4.jpg"
                   alt="Hotel Picture 4"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
@@ -214,6 +219,7 @@
                   class="hotel-slider__image"
                   src="img/Slide5.jpg"
                   alt="Hotel Picture 5"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -269,7 +275,17 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div id="map"></div>
+            <div class="map">
+              <iframe
+                rel="preconnect"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0404849586616!2d98.29237271534936!3d7.8908335079450955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTMnMjcuMCJOIDk4wrAxNyc0MC40IkU!5e0!3m2!1sru!2s!4v1618857917838!5m2!1sru!2s"
+                width="100%"
+                height="213"
+                style="border: none"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-details -->
@@ -293,6 +309,7 @@
                 src="img/hotel-blue-haven.png"
                 alt="Photo: Hotel Blue Haven"
                 class="hotels__image__main"
+                loading="lazy"
               />
             </div>
             <div class="hotels-about hotels-about-main">
@@ -319,6 +336,7 @@
                     src="img/map-pin.svg"
                     alt="Icon: map"
                     class="hotels__icon"
+                    loading="lazy"
                   />
                   <span class="hotels__description"
                     >1749 Wheeler Ridge Delaware</span
@@ -337,6 +355,7 @@
                     src="img/home.svg"
                     alt="Icon: home"
                     class="hotels__icon"
+                    loading="lazy"
                   />
                   <span class="hotels__description">1 x Room</span>
                 </div>
@@ -364,6 +383,7 @@
                 src="img/lux-belle-mare.png"
                 alt="Photo: LUX* Belle Mare"
                 class="hotels__image"
+                loading="lazy"
               />
             </div>
             <div class="hotels-about">
@@ -376,6 +396,7 @@
                     src="img/map-pin.svg"
                     alt="Icon: map"
                     class="hotels__icon"
+                    loading="lazy"
                   />
                   <span class="hotels__description"
                     >1749 Wheeler Ridge Delaware</span
@@ -386,6 +407,7 @@
                     src="img/user.svg"
                     alt="Icon: user"
                     class="hotels__icon"
+                    loading="lazy"
                   />
                   <span class="hotels__description">2 x Guests</span>
                 </div>
@@ -394,6 +416,7 @@
                     src="img/home.svg"
                     alt="Icon: home"
                     class="hotels__icon"
+                    loading="lazy"
                   />
                   <span class="hotels__description">1 x Room</span>
                 </div>
@@ -535,6 +558,7 @@
                 src="img/hotel-five-star.png"
                 alt="Photo: Hotel Five Star"
                 class="hotels__image"
+                loading="lazy"
               />
             </div>
             <div class="hotels-about">
@@ -547,6 +571,7 @@
                     src="img/map-pin.svg"
                     alt="Icon: map"
                     class="hotels__icon"
+                    loading="lazy"
                   />
                   <span class="hotels__description"
                     >1749 Wheeler Ridge Delaware</span
@@ -557,6 +582,7 @@
                     src="img/user.svg"
                     alt="Icon: user"
                     class="hotels__icon"
+                    loading="lazy"
                   />
                   <span class="hotels__description">2 x Guests</span>
                 </div>
@@ -565,6 +591,7 @@
                     src="img/home.svg"
                     alt="Icon: home"
                     class="hotels__icon"
+                    loading="lazy"
                   />
                   <span class="hotels__description">1 x Room</span>
                 </div>
@@ -630,6 +657,7 @@
                     src="img/reviews-avatar.jpg"
                     alt="Avatar: Megan Fox"
                     class="reviews-slider__avatar"
+                    loading="lazy"
                   />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
@@ -666,6 +694,7 @@
                     src="img/reviews-avatar2.jpg"
                     alt="Avatar: Ashlee Kim"
                     class="reviews-slider__avatar"
+                    loading="lazy"
                   />
                   <h3 class="reviews-slider__username">Ashlee Kim</h3>
                   <span class="reviews-slider__date">Stayed 29 Jul, 2019</span>
@@ -698,6 +727,7 @@
                     src="img/reviews-avatar3.jpg"
                     alt="Avatar: Robert Smith"
                     class="reviews-slider__avatar"
+                    loading="lazy"
                   />
                   <h3 class="reviews-slider__username">Robert Smith</h3>
                   <span class="reviews-slider__date"
@@ -733,6 +763,7 @@
                     src="img/reviews-avatar4.jpg"
                     alt="Avatar: Emily Brown"
                     class="reviews-slider__avatar"
+                    loading="lazy"
                   />
                   <h3 class="reviews-slider__username">Emily Brown</h3>
                   <span class="reviews-slider__date">Stayed 12 Dec, 2018</span>
@@ -767,6 +798,7 @@
                     src="img/reviews-avatar5.jpg"
                     alt="Avatar: Aaron Andrews"
                     class="reviews-slider__avatar"
+                    loading="lazy"
                   />
                   <h3 class="reviews-slider__username">Aaron Andrews</h3>
                   <span class="reviews-slider__date">Stayed 21 Sep, 2018</span>
@@ -829,6 +861,7 @@
               src="img/activity_1.jpg"
               alt="The curious corner of chamarel"
               class="card__image"
+              loading="lazy"
             />
             <h3 class="card__title">
               The curious corner<br />
@@ -847,6 +880,7 @@
               src="img/activity_2.jpg"
               alt="Gymkhana club golf course"
               class="card__image"
+              loading="lazy"
             />
             <h3 class="card__title">
               Gymkhana club golf<br />
@@ -865,6 +899,7 @@
               src="img/activity_3.jpg"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
+              loading="lazy"
             />
             <h3 class="card__title">
               Tamarind falls hiking<br />
@@ -883,6 +918,7 @@
               src="img/activity_4.jpg"
               alt="The blue marine discovery quest"
               class="card__image"
+              loading="lazy"
             />
             <h3 class="card__title">
               The blue marine discovery<br />
@@ -901,7 +937,10 @@
       <div class="container">
         <div class="footer-wrapper">
           <a href="#" class="logo footer__logo">
-            <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan"
+            <img
+              src="img/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              loading="lazy"
           /></a>
 
           <div class="footer__list footer__categories">
@@ -1173,11 +1212,11 @@
     <!-- /.modal -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.inputmask.min.js"></script>
-    <script src="js/aos.js"></script>
+    <script defer rel="preconnect" src="js/swiper-bundle.min.js"></script>
+    <script defer rel="preconnect" src="js/parallax.min.js"></script>
+    <script defer rel="preconnect" src="js/jquery.validate.min.js"></script>
+    <script defer rel="preconnect" src="js/jquery.inputmask.min.js"></script>
+    <script defer rel="preconnect" src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
